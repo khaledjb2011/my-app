@@ -15,6 +15,7 @@ const index = () => {
             <Card name={"mohamad"} msg={"how are you"}time={"23:40"}/>
            <Card name={"everst"} msg={"where are you"}time={"20:37"}/> 
             <Card name={"k-2"} msg={"i am waiting you"}time={"19:56"}/> 
+          
               
 
     </View>
