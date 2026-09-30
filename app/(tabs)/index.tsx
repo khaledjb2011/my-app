@@ -1,8 +1,21 @@
 import Card from '@/components/Card'
+import { data } from '@/constants/data'
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
 const index = () => {
+  const renderdata = () => {
+    const render  = data.map ((card)=>{
+      return <Card name={card.name} msg={card.about} time={card.price} />
+    })
+
+    return render 
+  }
+
+
+
+
+
   return (
     <View style={styles.contaner}>
       <View style={styles.search}>
@@ -11,11 +24,13 @@ const index = () => {
 
 
     
-      <Card name={"khaled"} msg={"hello"}time={"12:33"}/>
+      {/* <Card name={"khaled"} msg={"hello"}time={"12:33"}/>
             <Card name={"mohamad"} msg={"how are you"}time={"23:40"}/>
            <Card name={"everst"} msg={"where are you"}time={"20:37"}/> 
             <Card name={"k-2"} msg={"i am waiting you"}time={"19:56"}/> 
-          
+           */}
+
+           {renderdata()}
               
 
     </View>

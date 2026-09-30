@@ -25,7 +25,7 @@ export default index
 const styles = StyleSheet.create({
   contaner: {
     flex: 1,
-    backgroundColor: "red"
+    backgroundColor: ""
   },
   search: {
     borderWidth: 1,

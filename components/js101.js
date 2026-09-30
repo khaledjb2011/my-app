@@ -98,6 +98,7 @@ const students=[
         avg:99,
     },
     {
+
         name1:"lothse",
         class:"1002",
         avg:80,
@@ -111,30 +112,9 @@ students.forEach(students=> {
 })
 console.log(sum/students.length);
 
-var sum =100
-students.forEach(students=> {
-    sum=sum+students.avg
+
+students.forEach(students=> {    
 })
-console.log(sum/students.length);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
