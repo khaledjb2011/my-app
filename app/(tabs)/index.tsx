@@ -6,20 +6,17 @@ import { StyleSheet, Text, View } from 'react-native'
 const index = () => {
   const renderdata = () => {
     const render  = data.map ((card)=>{
-      return <Card name={card.name} msg={card.about} time={card.price} />
+      return <Card name={card.name} msg={card.about} bgcolor={card.color} />
     })
 
     return render 
   }
 
-
-
-
-
   return (
     <View style={styles.contaner}>
       <View style={styles.search}>
-        <Text>search</Text>
+        <Text>[عالمي الخاص]  </Text>
+        <text>رحله مع التوحد والاحتواء</text>
       </View>
 
 
@@ -42,12 +39,12 @@ export default index
 const styles = StyleSheet.create({
   contaner: {
     flex: 1,
-    backgroundColor: "green"
+    backgroundColor: "#9f7ebf"
   },
   search: {
     borderWidth: 1,
-    width: 400,
-    height: 40,
+    width: 420,
+    height: 80,
     margin: 20,
     alignItems: "center",
     borderRadius: 10
@@ -56,7 +53,7 @@ const styles = StyleSheet.create({
   information: {
     borderWidth: 1,
     width: 400,
-    height: 70,
+    height: 50,
     alignItems: "center",
     borderRadius: 10,
     flexDirection: "row",

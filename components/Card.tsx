@@ -4,8 +4,8 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 const Card = (props: any) => {
     return (
-    <TouchableOpacity onPress={()=> router.push('/hi')}>
-        <View style={styles.conversation}>
+    <TouchableOpacity  onPress={()=> router.push('/hi')}>
+        <View style={[styles.conversation, {backgroundColor: props.bgcolor} ]}>
         <View style={styles.box2}>
              <Image style={styles.box} source={{ uri: "https://www.shutterstock.com/image-vector/default-avatar-profile-icon-transparent-260nw-2463868843.jpg" }} />
           <View>
@@ -35,7 +35,8 @@ const styles = StyleSheet.create({
         flexDirection:"row",
         justifyContent:"space-between",
         alignSelf:"center",
-        margin:20
+        margin:5 ,
+
     },
     box2:{
     flexDirection: "row",
