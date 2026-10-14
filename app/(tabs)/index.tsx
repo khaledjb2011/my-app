@@ -15,8 +15,8 @@ const index = () => {
   return (
     <View style={styles.contaner}>
       <View style={styles.search}>
-        <Text>[عالمي الخاص]  </Text>
-        <text>رحله مع التوحد والاحتواء</text>
+        <Text style={styles.titele}>[عالمي الخاص]  </Text>
+        <text style={styles.subtitle}>رحله مع التوحد والاحتواء</text>
       </View>
 
 
@@ -39,21 +39,22 @@ export default index
 const styles = StyleSheet.create({
   contaner: {
     flex: 1,
-    backgroundColor: "#9f7ebf"
+    backgroundColor: "#e6ddcc"
   },
   search: {
     borderWidth: 1,
     width: 420,
     height: 80,
     margin: 20,
-    alignItems: "center",
-    borderRadius: 10
+    alignItems: "center", 
+    borderRadius: 10,
+    backgroundColor:"#9c3d54"
 
   },
   information: {
     borderWidth: 1,
     width: 400,
-    height: 50,
+    height: 70,
     alignItems: "center",
     borderRadius: 10,
     flexDirection: "row",
@@ -75,5 +76,13 @@ const styles = StyleSheet.create({
   },
   time: {
     marginRight: 10,
+  },
+  titele: {
+    fontSize:27,
+    fontWeight:"bold",
+  },
+  subtitle:{
+    fontSize:25,
+    marginTop:5,
   }
 })

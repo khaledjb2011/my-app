@@ -1,8 +1,11 @@
-import Card from '@/components/Card'
+import { useLocalSearchParams } from 'expo-router'
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
 const index = () => {
+const params=useLocalSearchParams()
+const prodData= JSON.parse(params.data)
+
   return (
     <View style={styles.contaner}>
       <View style={styles.search}>
@@ -10,10 +13,7 @@ const index = () => {
       </View>
 
 
-    
-      <Card name={"khaled"} msg={"hello"}time={"12:33"}/>
-            <Card name={"mohamad"} msg={"how are you"}time={"23:40"}/>
-           <Card name={"everst"} msg={"where are you"}time={"20:37"}/> 
+    <Text>{prodData.name}</Text>
               
 
     </View>
