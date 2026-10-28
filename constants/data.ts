@@ -2,7 +2,9 @@ export const data = [
     {
         name:"الروتين اليومي",
         about:"لمساعده الطفل على فهم الروتين الصباح و المساء",
-        color:"#1fa5bdaf",
+        color:"#6fb7c9",
+        soft:"#e4f3f7",
+        icon:"",
     },
     {
         name:"التعزيزات",
